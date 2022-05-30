@@ -38,7 +38,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     @Override
     public void onBindViewHolder(@NonNull CategoryHolder holder, int position) {
         final Category comic = categoryList.get(position);
-
+//kj
         String imgUrl = "http://"+ ServerPort.SV+":3000/"+comic.getImage().substring(comic.getImage().indexOf("uploads"),comic.getImage().length());
         Glide.with(holder.itemView.getContext())
                 .load(imgUrl)
